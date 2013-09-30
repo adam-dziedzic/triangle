@@ -70,7 +70,7 @@ public class MinTrianglePath {
 	/** Logging setup. */
 	private static Logger LOGGER = Logger.getLogger(MinTrianglePath.class
 	        .getName());
-	private static Level DEBUG_LEVEL = Level.OFF;
+	private static Level LOGGING_LEVEL = Level.OFF;
 
 	/** EOF - end of file sign */
 	private static String END_OF_FILE = "EOF";
@@ -116,10 +116,10 @@ public class MinTrianglePath {
 
 	/** Set logging to the console and apply debug level. */
 	private static void setLogging() {
-		LOGGER.setLevel(DEBUG_LEVEL);
+		LOGGER.setLevel(LOGGING_LEVEL);
 		ConsoleHandler handler = new ConsoleHandler();
 		handler.setFormatter(new SimpleFormatter());
-		handler.setLevel(DEBUG_LEVEL);
+		handler.setLevel(LOGGING_LEVEL);
 		LOGGER.addHandler(handler);
 	}
 
